@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suradejnarong Chumphu-in | CV Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans Thai', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <span class="font-bold text-lg tracking-wider text-white">PORTFOLIO<span class="text-indigo-400">.</span></span>
+      <div class="flex gap-6 text-sm font-medium text-slate-400">
+        <a href="#about" class="hover:text-indigo-400 transition">About</a>
+        <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="max-w-5xl mx-auto px-6 pt-32 pb-20">
+
+    <!-- Hero Section -->
+    <header class="flex flex-col-reverse md:flex-row items-center justify-between gap-10 pb-20 border-b border-slate-800">
+      <div class="space-y-4 max-w-xl text-center md:text-left">
+        <div class="inline-block px-3 py-1 text-xs font-semibold tracking-wide text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 rounded-full">
+          Aspiring Software Engineer / QA Tester
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+          สุรเดชณรงค์ ชุมภูอินทร์
+        </h1>
+        <p class="text-lg text-slate-400 leading-relaxed">
+          มุ่งมั่นสร้างสรรค์ซอฟต์แวร์ที่มีคุณภาพ ความเสถียร และมีประสิทธิภาพ สนใจด้าน Web Application, Database Architecture และ Software Testing
+        </p>
+        <div class="pt-2 flex flex-wrap gap-4 justify-center md:justify-start">
+          <a href="#contact" class="px-6 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition shadow-lg shadow-indigo-500/20">
+            Contact Me
+          </a>
+          <a href="#" class="px-6 py-2.5 rounded-lg border border-slate-700 hover:bg-slate-900 text-slate-300 font-medium text-sm transition flex items-center gap-2">
+            <i data-lucide="download" class="w-4 h-4"></i> Download CV
+          </a>
+        </div>
+      </div>
+      <!-- Profile Image Placeholder -->
+      <div class="relative group">
+        <div class="w-44 h-44 sm:w-52 sm:h-52 rounded-2xl bg-gradient-to-tr from-indigo-600 to-emerald-400 p-[2px] shadow-2xl">
+          <div class="w-full h-full bg-slate-900 rounded-2xl overflow-hidden flex items-center justify-center">
+            <!-- ใส่ URL รูปภาพของคุณที่นี่ -->
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Profile" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 border-b border-slate-800">
+      <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+        <i data-lucide="code-2" class="text-indigo-400"></i> ทักษะทางเทคนิค (Technical Skills)
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Programming & Frameworks -->
+        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800">
+          <h3 class="text-indigo-400 font-semibold mb-4 text-sm tracking-wider uppercase">Languages & Architecture</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">JavaScript</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">HTML5 / CSS3</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">SQL</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">MVC Architecture</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <!-- Database & Backend -->
+        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800">
+          <h3 class="text-indigo-400 font-semibold mb-4 text-sm tracking-wider uppercase">Database & Backend</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">MySQL / PostgreSQL</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">Database Design</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">RESTful API</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">Node.js Basics</span>
+          </div>
+        </div>
+
+        <!-- Testing & Tools -->
+        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800">
+          <h3 class="text-indigo-400 font-semibold mb-4 text-sm tracking-wider uppercase">Testing & Dev Tools</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">Git / GitHub</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">Software Testing (QA)</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">Test Cases & Bug Tracking</span>
+            <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-md">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 border-b border-slate-800">
+      <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+        <i data-lucide="layers" class="text-indigo-400"></i> ผลงานเด่น (Featured Projects)
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Project 1 -->
+        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-lg font-bold text-white">Database & MVC Web Application</h3>
+              <a href="#" class="text-slate-400 hover:text-indigo-400"><i data-lucide="external-link" class="w-5 h-5"></i></a>
+            </div>
+            <p class="text-slate-400 text-sm mb-4">
+              เว็บแอปพลิเคชันที่ออกแบบด้วยสถาปัตยกรรม MVC มีระบบจัดการฐานข้อมูล SQL ความสัมพันธ์ข้อมูล และระบบ CRUD สมบูรณ์
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs text-indigo-400 font-medium">#SQL</span>
+            <span class="text-xs text-indigo-400 font-medium">#MVC</span>
+            <span class="text-xs text-indigo-400 font-medium">#Backend</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-lg font-bold text-white">Software QA & Test Management</h3>
+              <a href="#" class="text-slate-400 hover:text-indigo-400"><i data-lucide="github" class="w-5 h-5"></i></a>
+            </div>
+            <p class="text-slate-400 text-sm mb-4">
+              การออกแบบ Test Cases, ทดสอบระบบ (Manual / Automated Testing) และจัดทำรายงาน Bug เพื่อให้ซอฟต์แวร์พร้อมใช้งาน
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs text-emerald-400 font-medium">#QA</span>
+            <span class="text-xs text-emerald-400 font-medium">#Testing</span>
+            <span class="text-xs text-emerald-400 font-medium">#Documentation</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section id="contact" class="py-16 text-center">
+      <h2 class="text-2xl font-bold text-white mb-3">ติดต่อสอบถาม / ร่วมงาน</h2>
+      <p class="text-slate-400 mb-8 max-w-md mx-auto text-sm">
+        พร้อมเปิดรับโอกาสในการทำงานและการฝึกงานด้าน Software Development และ Testing
+      </p>
+      <div class="flex justify-center gap-6">
+        <a href="mailto:suradejnarong@example.com" class="p-3 bg-slate-900 border border-slate-800 rounded-full hover:text-indigo-400 hover:border-indigo-500 transition">
+          <i data-lucide="mail" class="w-5 h-5"></i>
+        </a>
+        <a href="https://github.com" target="_blank" class="p-3 bg-slate-900 border border-slate-800 rounded-full hover:text-indigo-400 hover:border-indigo-500 transition">
+          <i data-lucide="github" class="w-5 h-5"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="p-3 bg-slate-900 border border-slate-800 rounded-full hover:text-indigo-400 hover:border-indigo-500 transition">
+          <i data-lucide="linkedin" class="w-5 h-5"></i>
+        </a>
+      </div>
+      <p class="text-xs text-slate-600 mt-12">© 2026 Suradejnarong Chumphu-in. All rights reserved.</p>
+    </section>
+
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
