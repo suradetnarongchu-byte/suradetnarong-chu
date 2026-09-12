@@ -58,7 +58,7 @@
         <div class="w-44 h-44 sm:w-52 sm:h-52 rounded-2xl bg-gradient-to-tr from-indigo-600 to-emerald-400 p-[2px] shadow-2xl">
           <div class="w-full h-full bg-slate-900 rounded-2xl overflow-hidden flex items-center justify-center">
             <img 
-              src="https://img.sanishtech.com/u/13bc9edbcd747a6206421072f9dff6da.jpg" 
+              src="https://img.sanishtech.com/u/a9e283b2d5c3a3ec7c924172595169ae.jpg" 
               alt="สุรเดชณรงค์ ชุมภูอินทร์" 
               class="w-full h-full object-cover object-top"
             >
@@ -126,7 +126,7 @@
               <span class="text-slate-500"><i data-lucide="folder-git-2" class="w-5 h-5"></i></span>
             </div>
             <p class="text-slate-400 text-sm mb-4">
-              เว็บแอปพลิเคชันที่ออกแบบตามสถาปัตยกรรม MVC พร้อมการจัดการฐานข้อมูล SQL ความสัมพันธ์ของข้อมูล และระบบ CRUD ครบวงจร
+              เว็บแอปพลิเคชันที่ออกแบบตามสถาปัตยกรรม MVC พร้อมการจัดการฐานข้อมูลเชิงสัมพันธ์ SQL และระบบ CRUD สมบูรณ์
             </p>
           </div>
           <div class="flex flex-wrap gap-2">
@@ -144,7 +144,7 @@
               <span class="text-slate-500"><i data-lucide="check-circle" class="w-5 h-5"></i></span>
             </div>
             <p class="text-slate-400 text-sm mb-4">
-              การออกแบบ Test Case, จัดการขั้นตอนการทดสอบ (Testing Procedures) และการบันทึกรายงาน Bug เพื่อรับรองคุณภาพของระบบ
+              การออกแบบ Test Case, กำหนดกระบวนการทดสอบ (Testing Procedures) และการทำรายงานข้อผิดพลาด (Bug Reports) เพื่อการประกันคุณภาพซอฟต์แวร์
             </p>
           </div>
           <div class="flex flex-wrap gap-2">
@@ -157,61 +157,48 @@
       </div>
     </section>
 
-<!-- CV Document Preview Section -->
+    <!-- CV Document Preview Section -->
     <section id="cv-preview" class="py-16 border-b border-slate-800">
       <div class="text-center max-w-2xl mx-auto mb-10">
         <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wide text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 rounded-full mb-3">
           <i data-lucide="file-text" class="w-3.5 h-3.5"></i> CURRICULUM VITAE
         </div>
-        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">เอกสารเรซูเม่ / CV (PDF)</h2>
-        <p class="text-slate-400 text-sm mt-2">เปิดอ่านเอกสารฉบับเต็ม หรือดาวน์โหลดไฟล์เก็บไว้ได้โดยตรง</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">เอกสารเรซูเม่ / CV</h2>
+        <p class="text-slate-400 text-sm mt-2">แสดงเอกสาร CV ฉบับเต็ม สามารถคลิกเปิดดูภาพความละเอียดสูงหรือดาวน์โหลดเก็บไว้ได้</p>
       </div>
 
-      <!-- PDF Viewer Card -->
-      <div class="max-w-4xl mx-auto bg-slate-900/70 border border-slate-800 rounded-2xl p-4 sm:p-6 shadow-2xl backdrop-blur-sm">
-        
-        <!-- กรอบแสดงผลไฟล์ PDF -->
-        <div class="w-full h-[750px] sm:h-[900px] rounded-xl overflow-hidden border border-slate-800 bg-slate-950">
-          <object 
-            data="./CV.pdf" 
-            type="application/pdf" 
-            class="w-full h-full"
-          >
-            <!-- ข้อความสำรองสำหรับมือถือที่ไม่รองรับการฝัง PDF -->
-            <div class="flex flex-col items-center justify-center h-full p-6 text-center text-slate-400">
-              <i data-lucide="file-text" class="w-16 h-16 text-indigo-400 mb-4"></i>
-              <p class="text-base mb-2 font-medium text-white">อุปกรณ์นี้ไม่รองรับการเปิดอ่าน PDF ผ่านหน้าเว็บโดยตรง</p>
-              <p class="text-sm mb-6">คุณสามารถเปิดอ่านแบบเต็มหน้าต่างหรือดาวน์โหลดไฟล์ได้จากปุ่มด้านล่าง</p>
-              <a 
-                href="./CV.pdf" 
-                target="_blank" 
-                class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-medium text-sm transition shadow-lg shadow-indigo-500/20"
-              >
-                เปิดไฟล์ PDF
-              </a>
-            </div>
-          </object>
+      <!-- CV Image Card -->
+      <div class="max-w-3xl mx-auto bg-slate-900/70 border border-slate-800 rounded-2xl p-4 sm:p-6 shadow-2xl backdrop-blur-sm">
+        <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 flex justify-center shadow-inner">
+          <a href="https://img.sanishtech.com/u/a9e283b2d5c3a3ec7c924172595169ae.jpg" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
+            <img 
+              src="https://img.sanishtech.com/u/a9e283b2d5c3a3ec7c924172595169ae.jpg" 
+              alt="Suradejnarong Chumphu-in CV" 
+              class="w-full max-w-2xl h-auto object-contain rounded-lg hover:scale-[1.01] transition duration-300 cursor-pointer"
+              loading="lazy"
+            />
+          </a>
         </div>
 
-        <!-- ปุ่มกดด้านล่าง -->
+        <!-- Action Buttons -->
         <div class="mt-6 flex flex-wrap items-center justify-center gap-4">
           <a 
-            href="./CV.pdf" 
+            href="https://img.sanishtech.com/u/a9e283b2d5c3a3ec7c924172595169ae.jpg" 
             target="_blank" 
             rel="noopener noreferrer"
             class="px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition shadow-lg shadow-indigo-500/25 flex items-center gap-2"
           >
-            <i data-lucide="external-link" class="w-4 h-4"></i> เปิดอ่านเต็มหน้าจอ
+            <i data-lucide="maximize-2" class="w-4 h-4"></i> เปิดดูภาพขนาดเต็ม (Full View)
           </a>
           <a 
-            href="./CV.pdf" 
-            download="CV.pdf"
+            href="https://img.sanishtech.com/u/a9e283b2d5c3a3ec7c924172595169ae.jpg" 
+            download="Suradejnarong_CV.jpg"
+            target="_blank"
             class="px-5 py-2.5 rounded-lg border border-slate-700 hover:bg-slate-800 text-slate-300 font-medium text-sm transition flex items-center gap-2"
           >
-            <i data-lucide="download" class="w-4 h-4"></i> ดาวน์โหลด PDF
+            <i data-lucide="download" class="w-4 h-4"></i> ดาวน์โหลดรูปภาพ CV
           </a>
         </div>
-
       </div>
     </section>
 
@@ -226,7 +213,7 @@
           <i data-lucide="github" class="w-5 h-5"></i>
         </a>
       </div>
-      <p class="text-xs text-slate-600 mt-12">© 2026 Suradetnarong Chumphuin. All rights reserved.</p>
+      <p class="text-xs text-slate-600 mt-12">© 2026 Suradejnarong Chumphu-in. All rights reserved.</p>
     </section>
 
   </main>
