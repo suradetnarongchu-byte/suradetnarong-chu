@@ -157,46 +157,61 @@
       </div>
     </section>
 
-    <!-- CV Document Preview Section -->
+<!-- CV Document Preview Section -->
     <section id="cv-preview" class="py-16 border-b border-slate-800">
       <div class="text-center max-w-2xl mx-auto mb-10">
         <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wide text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 rounded-full mb-3">
           <i data-lucide="file-text" class="w-3.5 h-3.5"></i> CURRICULUM VITAE
         </div>
-        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">เอกสารเรซูเม่ / CV</h2>
-        <p class="text-slate-400 text-sm mt-2">แสดงเอกสาร CV ฉบับเต็ม สามารถกดเปิดดูขนาดใหญ่หรือดาวน์โหลดเก็บไว้ได้</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">เอกสารเรซูเม่ / CV (PDF)</h2>
+        <p class="text-slate-400 text-sm mt-2">เปิดอ่านเอกสารฉบับเต็ม หรือดาวน์โหลดไฟล์เก็บไว้ได้โดยตรง</p>
       </div>
 
-      <!-- CV Image Card -->
-      <div class="max-w-3xl mx-auto bg-slate-900/70 border border-slate-800 rounded-2xl p-4 sm:p-6 shadow-2xl backdrop-blur-sm">
-        <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 flex justify-center shadow-inner">
-          <img 
-            src="https://img.sanishtech.com/u/13bc9edbcd747a6206421072f9dff6da.jpg" 
-            alt="Suradetnarong Chumphuin CV" 
-            class="w-full max-w-2xl h-auto object-contain rounded-lg"
-            loading="lazy"
-          />
+      <!-- PDF Viewer Card -->
+      <div class="max-w-4xl mx-auto bg-slate-900/70 border border-slate-800 rounded-2xl p-4 sm:p-6 shadow-2xl backdrop-blur-sm">
+        
+        <!-- กรอบแสดงผลไฟล์ PDF -->
+        <div class="w-full h-[750px] sm:h-[900px] rounded-xl overflow-hidden border border-slate-800 bg-slate-950">
+          <object 
+            data="./CV.pdf" 
+            type="application/pdf" 
+            class="w-full h-full"
+          >
+            <!-- ข้อความสำรองสำหรับมือถือที่ไม่รองรับการฝัง PDF -->
+            <div class="flex flex-col items-center justify-center h-full p-6 text-center text-slate-400">
+              <i data-lucide="file-text" class="w-16 h-16 text-indigo-400 mb-4"></i>
+              <p class="text-base mb-2 font-medium text-white">อุปกรณ์นี้ไม่รองรับการเปิดอ่าน PDF ผ่านหน้าเว็บโดยตรง</p>
+              <p class="text-sm mb-6">คุณสามารถเปิดอ่านแบบเต็มหน้าต่างหรือดาวน์โหลดไฟล์ได้จากปุ่มด้านล่าง</p>
+              <a 
+                href="./CV.pdf" 
+                target="_blank" 
+                class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-medium text-sm transition shadow-lg shadow-indigo-500/20"
+              >
+                เปิดไฟล์ PDF
+              </a>
+            </div>
+          </object>
         </div>
 
-        <!-- Action Buttons -->
+        <!-- ปุ่มกดด้านล่าง -->
         <div class="mt-6 flex flex-wrap items-center justify-center gap-4">
           <a 
-            href="https://img.sanishtech.com/u/13bc9edbcd747a6206421072f9dff6da.jpg" 
+            href="./CV.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             class="px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition shadow-lg shadow-indigo-500/25 flex items-center gap-2"
           >
-            <i data-lucide="maximize-2" class="w-4 h-4"></i> เปิดดูภาพขนาดเต็ม (Full View)
+            <i data-lucide="external-link" class="w-4 h-4"></i> เปิดอ่านเต็มหน้าจอ
           </a>
           <a 
-            href="https://img.sanishtech.com/u/13bc9edbcd747a6206421072f9dff6da.jpg" 
-            download="Suradetnarong_CV.jpg"
-            target="_blank"
+            href="./CV.pdf" 
+            download="CV.pdf"
             class="px-5 py-2.5 rounded-lg border border-slate-700 hover:bg-slate-800 text-slate-300 font-medium text-sm transition flex items-center gap-2"
           >
-            <i data-lucide="download" class="w-4 h-4"></i> ดาวน์โหลดรูปภาพ
+            <i data-lucide="download" class="w-4 h-4"></i> ดาวน์โหลด PDF
           </a>
         </div>
+
       </div>
     </section>
 
