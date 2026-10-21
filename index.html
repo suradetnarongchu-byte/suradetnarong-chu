@@ -18,7 +18,7 @@
 <body class="bg-slate-950 text-slate-200 antialiased selection:bg-indigo-500 selection:text-white">
 
   <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50">
+  <nav class="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-40">
     <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#" class="font-bold text-lg tracking-wider text-white">PORTFOLIO<span class="text-indigo-400">.</span></a>
       <div class="flex gap-4 sm:gap-6 text-sm font-medium text-slate-400">
@@ -72,7 +72,8 @@
             <img 
               src="profile.jpg" 
               alt="Suradetnarong Chumphuin" 
-              class="w-full h-full object-cover object-top"
+              class="w-full h-full object-cover object-top cursor-pointer hover:scale-105 transition duration-300"
+              onclick="openModal('profile.jpg', 'Suradetnarong Chumphuin')"
             >
           </div>
         </div>
@@ -119,34 +120,30 @@
 
           <!-- Screenshots (2 Images) -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg cursor-pointer" onclick="openModal('Calorie%20cal%20%231.png', 'Calorie Calculator - Step 1 & 2: คำนวณ BMR/TDEE & Dashboard')">
               <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
                 <span class="font-medium flex items-center gap-1.5"><i data-lucide="sliders" class="w-3.5 h-3.5 text-indigo-400"></i> Step 1 & 2: คำนวณ BMR/TDEE & Dashboard</span>
-                <span class="text-[10px] text-slate-500">Preview #1</span>
+                <span class="text-[10px] text-indigo-400 flex items-center gap-1"><i data-lucide="maximize-2" class="w-3 h-3"></i> คลิกดูรูป</span>
               </div>
-              <a href="Calorie%20cal%20%231.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
-                <img 
-                  src="Calorie%20cal%20%231.png" 
-                  alt="Calorie Calculator - Target & Dashboard" 
-                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
-                  loading="lazy"
-                >
-              </a>
+              <img 
+                src="Calorie%20cal%20%231.png" 
+                alt="Calorie Calculator - Target & Dashboard" 
+                class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                loading="lazy"
+              >
             </div>
 
-            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg cursor-pointer" onclick="openModal('Calorie%20cal%20%232.png', 'Calorie Calculator - Step 3: บันทึกอาหาร & ท็อปปิ้ง')">
               <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
                 <span class="font-medium flex items-center gap-1.5"><i data-lucide="utensils" class="w-3.5 h-3.5 text-indigo-400"></i> Step 3: บันทึกอาหาร & ท็อปปิ้ง</span>
-                <span class="text-[10px] text-slate-500">Preview #2</span>
+                <span class="text-[10px] text-indigo-400 flex items-center gap-1"><i data-lucide="maximize-2" class="w-3 h-3"></i> คลิกดูรูป</span>
               </div>
-              <a href="Calorie%20cal%20%232.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
-                <img 
-                  src="Calorie%20cal%20%232.png" 
-                  alt="Calorie Calculator - Food Log" 
-                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
-                  loading="lazy"
-                >
-              </a>
+              <img 
+                src="Calorie%20cal%20%232.png" 
+                alt="Calorie Calculator - Food Log" 
+                class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                loading="lazy"
+              >
             </div>
           </div>
 
@@ -181,64 +178,56 @@
 
           <!-- Screenshots (4 Images) -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg cursor-pointer" onclick="openModal('Web%20Store%20%231.png', 'E-Commerce Platform - Storefront Catalog')">
               <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
                 <span class="font-medium flex items-center gap-1.5"><i data-lucide="grid" class="w-3.5 h-3.5 text-cyan-400"></i> Storefront</span>
-                <span class="text-[10px] text-slate-500">#1</span>
+                <span class="text-[10px] text-cyan-400 flex items-center gap-1"><i data-lucide="maximize-2" class="w-3 h-3"></i> ดูรูป</span>
               </div>
-              <a href="Web%20Store%20%231.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
-                <img 
-                  src="Web%20Store%20%231.png" 
-                  alt="Web Store - Catalog Preview" 
-                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
-                  loading="lazy"
-                >
-              </a>
+              <img 
+                src="Web%20Store%20%231.png" 
+                alt="Web Store - Catalog Preview" 
+                class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                loading="lazy"
+              >
             </div>
 
-            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg cursor-pointer" onclick="openModal('Web%20Store%20%232.png', 'E-Commerce Platform - Product Detail View')">
               <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
                 <span class="font-medium flex items-center gap-1.5"><i data-lucide="box" class="w-3.5 h-3.5 text-cyan-400"></i> Product Detail</span>
-                <span class="text-[10px] text-slate-500">#2</span>
+                <span class="text-[10px] text-cyan-400 flex items-center gap-1"><i data-lucide="maximize-2" class="w-3 h-3"></i> ดูรูป</span>
               </div>
-              <a href="Web%20Store%20%232.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
-                <img 
-                  src="Web%20Store%20%232.png" 
-                  alt="Web Store - Product Detail" 
-                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
-                  loading="lazy"
-                >
-              </a>
+              <img 
+                src="Web%20Store%20%232.png" 
+                alt="Web Store - Product Detail" 
+                class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                loading="lazy"
+              >
             </div>
 
-            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg cursor-pointer" onclick="openModal('Web%20Store%20%233.png', 'E-Commerce Platform - Cart & Checkout Flow')">
               <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
                 <span class="font-medium flex items-center gap-1.5"><i data-lucide="shopping-bag" class="w-3.5 h-3.5 text-cyan-400"></i> Cart / Checkout</span>
-                <span class="text-[10px] text-slate-500">#3</span>
+                <span class="text-[10px] text-cyan-400 flex items-center gap-1"><i data-lucide="maximize-2" class="w-3 h-3"></i> ดูรูป</span>
               </div>
-              <a href="Web%20Store%20%233.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
-                <img 
-                  src="Web%20Store%20%233.png" 
-                  alt="Web Store - Cart Flow" 
-                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
-                  loading="lazy"
-                >
-              </a>
+              <img 
+                src="Web%20Store%20%233.png" 
+                alt="Web Store - Cart Flow" 
+                class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                loading="lazy"
+              >
             </div>
 
-            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg cursor-pointer" onclick="openModal('Web%20Store%20%234.png', 'E-Commerce Platform - Receipt & Order Notification')">
               <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
                 <span class="font-medium flex items-center gap-1.5"><i data-lucide="mail-check" class="w-3.5 h-3.5 text-cyan-400"></i> Receipt / Order</span>
-                <span class="text-[10px] text-slate-500">#4</span>
+                <span class="text-[10px] text-cyan-400 flex items-center gap-1"><i data-lucide="maximize-2" class="w-3 h-3"></i> ดูรูป</span>
               </div>
-              <a href="Web%20Store%20%234.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
-                <img 
-                  src="Web%20Store%20%234.png" 
-                  alt="Web Store - Order Confirmation" 
-                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
-                  loading="lazy"
-                >
-              </a>
+              <img 
+                src="Web%20Store%20%234.png" 
+                alt="Web Store - Order Confirmation" 
+                class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                loading="lazy"
+              >
             </div>
           </div>
 
@@ -273,49 +262,43 @@
 
           <!-- Screenshots (3 Images) -->
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg cursor-pointer" onclick="openModal('Financial%20%231.png', 'Financial Calculator - Budget Allocation')">
               <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
                 <span class="font-medium flex items-center gap-1.5"><i data-lucide="calculator" class="w-3.5 h-3.5 text-amber-400"></i> Budget Allocation</span>
-                <span class="text-[10px] text-slate-500">#1</span>
+                <span class="text-[10px] text-amber-400 flex items-center gap-1"><i data-lucide="maximize-2" class="w-3 h-3"></i> ดูรูป</span>
               </div>
-              <a href="Financial%20%231.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
-                <img 
-                  src="Financial%20%231.png" 
-                  alt="Financial Calculator - Screen 1" 
-                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
-                  loading="lazy"
-                >
-              </a>
+              <img 
+                src="Financial%20%231.png" 
+                alt="Financial Calculator - Screen 1" 
+                class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                loading="lazy"
+              >
             </div>
 
-            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg cursor-pointer" onclick="openModal('Financial%20%232.png', 'Financial Calculator - Expense Tracking')">
               <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
                 <span class="font-medium flex items-center gap-1.5"><i data-lucide="trending-up" class="w-3.5 h-3.5 text-amber-400"></i> Expense Tracking</span>
-                <span class="text-[10px] text-slate-500">#2</span>
+                <span class="text-[10px] text-amber-400 flex items-center gap-1"><i data-lucide="maximize-2" class="w-3 h-3"></i> ดูรูป</span>
               </div>
-              <a href="Financial%20%232.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
-                <img 
-                  src="Financial%20%232.png" 
-                  alt="Financial Calculator - Screen 2" 
-                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
-                  loading="lazy"
-                >
-              </a>
+              <img 
+                src="Financial%20%232.png" 
+                alt="Financial Calculator - Screen 2" 
+                class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                loading="lazy"
+              >
             </div>
 
-            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg sm:col-span-2 md:col-span-1">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg cursor-pointer sm:col-span-2 md:col-span-1" onclick="openModal('Financial%20%233.png', 'Financial Calculator - Savings Projection Summary')">
               <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
                 <span class="font-medium flex items-center gap-1.5"><i data-lucide="wallet" class="w-3.5 h-3.5 text-amber-400"></i> Projection Summary</span>
-                <span class="text-[10px] text-slate-500">#3</span>
+                <span class="text-[10px] text-amber-400 flex items-center gap-1"><i data-lucide="maximize-2" class="w-3 h-3"></i> ดูรูป</span>
               </div>
-              <a href="Financial%20%233.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
-                <img 
-                  src="Financial%20%233.png" 
-                  alt="Financial Calculator - Screen 3" 
-                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
-                  loading="lazy"
-                >
-              </a>
+              <img 
+                src="Financial%20%233.png" 
+                alt="Financial Calculator - Screen 3" 
+                class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                loading="lazy"
+              >
             </div>
           </div>
 
@@ -503,27 +486,24 @@
 
       <!-- Resume Image Card -->
       <div class="max-w-3xl mx-auto bg-slate-900/70 border border-slate-800 rounded-2xl p-4 sm:p-6 shadow-2xl backdrop-blur-sm">
-        <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 flex justify-center shadow-inner">
-          <a href="Resume_Suredetnarong_Chumphuin.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
-            <img 
-              src="Resume_Suredetnarong_Chumphuin.png" 
-              alt="Suradetnarong Chumphuin Resume" 
-              class="w-full max-w-2xl h-auto object-contain rounded-lg hover:scale-[1.01] transition duration-300 cursor-pointer"
-              loading="lazy"
-            />
-          </a>
+        <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 flex justify-center shadow-inner cursor-pointer" onclick="openModal('Resume_Suredetnarong_Chumphuin.png', 'เรซูเม่ฉบับเต็ม - SURADETNARONG CHUMPHUIN')">
+          <img 
+            src="Resume_Suredetnarong_Chumphuin.png" 
+            alt="Suradetnarong Chumphuin Resume" 
+            class="w-full max-w-2xl h-auto object-contain rounded-lg hover:scale-[1.01] transition duration-300"
+            loading="lazy"
+          />
         </div>
 
         <!-- Action Buttons -->
         <div class="mt-6 flex flex-wrap items-center justify-center gap-4">
-          <a 
-            href="Resume_Suredetnarong_Chumphuin.png" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition shadow-lg shadow-indigo-500/25 flex items-center gap-2"
+          <button 
+            type="button"
+            onclick="openModal('Resume_Suredetnarong_Chumphuin.png', 'เรซูเม่ฉบับเต็ม - SURADETNARONG CHUMPHUIN')"
+            class="px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition shadow-lg shadow-indigo-500/25 flex items-center gap-2 cursor-pointer"
           >
             <i data-lucide="maximize-2" class="w-4 h-4"></i> เปิดดูภาพขนาดเต็ม (Full View)
-          </a>
+          </button>
           <a 
             href="Resume_Suredetnarong_Chumphuin.png" 
             download="Resume_Suradetnarong.png"
@@ -551,9 +531,71 @@
 
   </main>
 
-  <!-- Initialize Lucide Icons -->
+  <!-- ================= POPUP MODAL (LIGHTBOX) ================= -->
+  <div 
+    id="image-modal" 
+    class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex flex-col items-center justify-center p-4 sm:p-6 transition-opacity duration-300"
+    onclick="handleModalBackdropClick(event)"
+  >
+    <!-- Close Button -->
+    <button 
+      type="button"
+      onclick="closeModal()" 
+      class="absolute top-4 right-4 sm:top-6 sm:right-6 text-slate-400 hover:text-white bg-slate-900/80 hover:bg-slate-800 border border-slate-700 p-2.5 rounded-full transition shadow-lg z-50 cursor-pointer"
+      title="ปิดหน้าต่าง (Esc)"
+    >
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Modal Content Box -->
+    <div class="relative max-w-5xl w-full max-h-[90vh] flex flex-col items-center justify-center" onclick="event.stopPropagation()">
+      <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 shadow-2xl flex items-center justify-center max-h-[82vh]">
+        <img 
+          id="modal-image" 
+          src="" 
+          alt="Preview Image" 
+          class="max-w-full max-h-[82vh] w-auto h-auto object-contain select-none"
+        />
+      </div>
+      <p id="modal-caption" class="text-slate-300 text-sm font-medium mt-3 text-center px-4"></p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
   <script>
+    // Initialize Lucide Icons
     lucide.createIcons();
+
+    // Modal Functions
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-image');
+    const modalCaption = document.getElementById('modal-caption');
+
+    function openModal(imageSrc, captionText) {
+      modalImg.src = imageSrc;
+      modalCaption.textContent = captionText || '';
+      modal.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modalImg.src = '';
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    function handleModalBackdropClick(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    }
+
+    // Close on Escape Key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
   </script>
 </body>
 </html>
