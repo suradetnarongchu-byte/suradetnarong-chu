@@ -93,128 +93,311 @@
         </span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- PART 1: FEATURED PROJECTS WITH SCREENSHOTS -->
+      <div class="space-y-10">
 
-        <!-- Project 1: Calorie Calculator -->
-        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                <i data-lucide="activity" class="w-4 h-4 text-emerald-400"></i> Calorie Calculator
-              </h3>
+        <!-- 1. Calorie Calculator (2 Screenshots) -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-slate-900/90 to-slate-900/50 border border-indigo-500/30 shadow-2xl">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <div class="flex items-center gap-3">
+              <span class="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                <i data-lucide="activity" class="w-6 h-6 text-emerald-400"></i>
+              </span>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Featured Application</span>
+                <h3 class="text-xl sm:text-2xl font-extrabold text-white">1. Calorie Calculator</h3>
+              </div>
             </div>
-            <div class="text-xs text-slate-400 space-y-2 mb-4 leading-relaxed">
-              <p><strong class="text-slate-200">Features:</strong> พัฒนา Core Calculation Engine สำหรับคำนวณค่า BMR และ TDEE จากข้อมูลสรีระของผู้ใช้ (อายุ น้ำหนัก ส่วนสูง และระดับกิจกรรม)</p>
-              <p><strong class="text-slate-200">Highlights:</strong> ส่งมอบเป้าหมายแคลอรีประจำวันที่ปรับแต่งให้เหมาะกับแต่ละบุคคล ผ่าน User Interface ที่ใช้งานง่าย เพิ่มความแม่นยำในการติดตามสุขภาพ</p>
+            <span class="text-xs font-semibold px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">
+              BMR & TDEE / Food Tracker
+            </span>
+          </div>
+
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            เว็บแอปพลิเคชันคำนวณและบันทึกแคลอรี่อาหารประจำวัน คำนวณพลังงานตามสรีรวิทยา (BMR & TDEE) ควบคู่กับ Dashboard สรุปผลแบบเรียลไทม์ และระบบ Food Log ที่มีเมนูสำเร็จรูปกว่า 130 รายการพร้อมตัวเลือกท็อปปิ้งไดนามิก
+          </p>
+
+          <!-- Screenshots (2 Images) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+              <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
+                <span class="font-medium flex items-center gap-1.5"><i data-lucide="sliders" class="w-3.5 h-3.5 text-indigo-400"></i> Step 1 & 2: คำนวณ BMR/TDEE & Dashboard</span>
+                <span class="text-[10px] text-slate-500">Preview #1</span>
+              </div>
+              <a href="Calorie%20cal%20%231.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
+                <img 
+                  src="Calorie%20cal%20%231.png" 
+                  alt="Calorie Calculator - Target & Dashboard" 
+                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
+                  loading="lazy"
+                >
+              </a>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+              <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
+                <span class="font-medium flex items-center gap-1.5"><i data-lucide="utensils" class="w-3.5 h-3.5 text-indigo-400"></i> Step 3: บันทึกอาหาร & ท็อปปิ้ง</span>
+                <span class="text-[10px] text-slate-500">Preview #2</span>
+              </div>
+              <a href="Calorie%20cal%20%232.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
+                <img 
+                  src="Calorie%20cal%20%232.png" 
+                  alt="Calorie Calculator - Food Log" 
+                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
+                  loading="lazy"
+                >
+              </a>
             </div>
           </div>
-          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Calculation Engine</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">UX/UI</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Health Tech</span>
+
+          <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-indigo-300 font-medium">BMR / TDEE Calculation</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-indigo-300 font-medium">Real-time Progress Dashboard</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-indigo-300 font-medium">130+ Food Database</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-indigo-300 font-medium">Add-on Topping Engine</span>
           </div>
         </div>
 
-        <!-- Project 2: AI-Powered Estimation & Analysis -->
-        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                <i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i> AI-Powered Estimation & Analysis
-              </h3>
+        <!-- 2. E-Commerce with Automated Notifications (4 Screenshots) -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-slate-900/90 to-slate-900/50 border border-slate-800 shadow-2xl">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <div class="flex items-center gap-3">
+              <span class="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                <i data-lucide="shopping-cart" class="w-6 h-6 text-cyan-400"></i>
+              </span>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">E-Commerce Platform</span>
+                <h3 class="text-xl sm:text-2xl font-extrabold text-white">2. E-Commerce with Automated Notifications</h3>
+              </div>
             </div>
-            <div class="text-xs text-slate-400 space-y-2 mb-4 leading-relaxed">
-              <p><strong class="text-slate-200">Features:</strong> เชื่อมต่อ Natural Language Processing (NLP) เพื่อแยกวิเคราะห์ (Parse) และประมวลผลบันทึกการรับประทานอาหารและค่าใช้จ่ายแบบอัตโนมัติ</p>
-              <p><strong class="text-slate-200">Highlights:</strong> ลด Friction ในการกรอกข้อมูลด้วยตนเอง โดยเปิดให้ผู้ใช้ป้อนคำสั่งผ่าน Text Prompts ธรรมดาเพื่อให้ระบบจัดหมวดหมู่และวิเคราะห์ให้ทันที</p>
+            <span class="text-xs font-semibold px-3 py-1 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded-full">
+              Full Flow & Email Automation
+            </span>
+          </div>
+
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            แพลตฟอร์มร้านค้าออนไลน์แบบ End-to-End มีระบบแสดงสินค้า รายละเอียด ตะกร้าสินค้า และขั้นตอนการชำระเงินที่รวดเร็ว พร้อมระบบส่งใบเสร็จและแจ้งเตือนสถานะคำสั่งซื้อผ่านอีเมลอัตโนมัติแบบเรียลไทม์
+          </p>
+
+          <!-- Screenshots (4 Images) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+              <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
+                <span class="font-medium flex items-center gap-1.5"><i data-lucide="grid" class="w-3.5 h-3.5 text-cyan-400"></i> Storefront</span>
+                <span class="text-[10px] text-slate-500">#1</span>
+              </div>
+              <a href="Web%20Store%20%231.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
+                <img 
+                  src="Web%20Store%20%231.png" 
+                  alt="Web Store - Catalog Preview" 
+                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
+                  loading="lazy"
+                >
+              </a>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+              <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
+                <span class="font-medium flex items-center gap-1.5"><i data-lucide="box" class="w-3.5 h-3.5 text-cyan-400"></i> Product Detail</span>
+                <span class="text-[10px] text-slate-500">#2</span>
+              </div>
+              <a href="Web%20Store%20%232.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
+                <img 
+                  src="Web%20Store%20%232.png" 
+                  alt="Web Store - Product Detail" 
+                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
+                  loading="lazy"
+                >
+              </a>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+              <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
+                <span class="font-medium flex items-center gap-1.5"><i data-lucide="shopping-bag" class="w-3.5 h-3.5 text-cyan-400"></i> Cart / Checkout</span>
+                <span class="text-[10px] text-slate-500">#3</span>
+              </div>
+              <a href="Web%20Store%20%233.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
+                <img 
+                  src="Web%20Store%20%233.png" 
+                  alt="Web Store - Cart Flow" 
+                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
+                  loading="lazy"
+                >
+              </a>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+              <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
+                <span class="font-medium flex items-center gap-1.5"><i data-lucide="mail-check" class="w-3.5 h-3.5 text-cyan-400"></i> Receipt / Order</span>
+                <span class="text-[10px] text-slate-500">#4</span>
+              </div>
+              <a href="Web%20Store%20%234.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
+                <img 
+                  src="Web%20Store%20%234.png" 
+                  alt="Web Store - Order Confirmation" 
+                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
+                  loading="lazy"
+                >
+              </a>
             </div>
           </div>
-          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">NLP Integration</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Text Parsing</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Automation</span>
+
+          <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-cyan-300 font-medium">E-Commerce Flow</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-cyan-300 font-medium">Automated Email System</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-cyan-300 font-medium">Checkout Flow & Cart</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-cyan-300 font-medium">Transaction Tracking</span>
           </div>
         </div>
 
-        <!-- Project 3: Financial Calculator -->
-        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                <i data-lucide="badge-dollar-sign" class="w-4 h-4 text-amber-400"></i> Financial Calculator
-              </h3>
+        <!-- 3. Financial Calculator (3 Screenshots) -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-slate-900/90 to-slate-900/50 border border-slate-800 shadow-2xl">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <div class="flex items-center gap-3">
+              <span class="p-2.5 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                <i data-lucide="badge-dollar-sign" class="w-6 h-6 text-amber-400"></i>
+              </span>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-400">FinTech Web App</span>
+                <h3 class="text-xl sm:text-2xl font-extrabold text-white">3. Financial Calculator</h3>
+              </div>
             </div>
-            <div class="text-xs text-slate-400 space-y-2 mb-4 leading-relaxed">
-              <p><strong class="text-slate-200">Features:</strong> วาง Logic การคำนวณแบบ Real-time เพื่อจัดสรรงบประมาณ ติดตามค่าใช้จ่ายรายวัน และคาดการณ์ผลลัพธ์การออมเงินในระยะยาว</p>
-              <p><strong class="text-slate-200">Highlights:</strong> ปรับปรุงประสิทธิภาพการประมวลผลข้อมูลเพื่อแสดงผลสรุปภาพรวมทางการเงินได้ทันที ช่วยเสริมการตัดสินใจทางการเงินให้แม่นยำ</p>
+            <span class="text-xs font-semibold px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full">
+              Real-time Budget & Savings
+            </span>
+          </div>
+
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            เว็บแอปพลิเคชันคำนวณและวางแผนทางการเงิน ออกแบบตรรกะประมวลผลแบบ Real-time เพื่อจัดสรรงบประมาณ ติดตามค่าใช้จ่ายประจำวัน และประมาณการผลตอบแทนหรือเป้าหมายเงินออมในอนาคตได้อย่างแม่นยำ
+          </p>
+
+          <!-- Screenshots (3 Images) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+              <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
+                <span class="font-medium flex items-center gap-1.5"><i data-lucide="calculator" class="w-3.5 h-3.5 text-amber-400"></i> Budget Allocation</span>
+                <span class="text-[10px] text-slate-500">#1</span>
+              </div>
+              <a href="Financial%20%231.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
+                <img 
+                  src="Financial%20%231.png" 
+                  alt="Financial Calculator - Screen 1" 
+                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
+                  loading="lazy"
+                >
+              </a>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg">
+              <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
+                <span class="font-medium flex items-center gap-1.5"><i data-lucide="trending-up" class="w-3.5 h-3.5 text-amber-400"></i> Expense Tracking</span>
+                <span class="text-[10px] text-slate-500">#2</span>
+              </div>
+              <a href="Financial%20%232.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
+                <img 
+                  src="Financial%20%232.png" 
+                  alt="Financial Calculator - Screen 2" 
+                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
+                  loading="lazy"
+                >
+              </a>
+            </div>
+
+            <div class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-950/80 shadow-lg sm:col-span-2 md:col-span-1">
+              <div class="p-2 text-xs text-slate-400 border-b border-slate-800/80 bg-slate-900/60 flex items-center justify-between">
+                <span class="font-medium flex items-center gap-1.5"><i data-lucide="wallet" class="w-3.5 h-3.5 text-amber-400"></i> Projection Summary</span>
+                <span class="text-[10px] text-slate-500">#3</span>
+              </div>
+              <a href="Financial%20%233.png" target="_blank" title="คลิกเพื่อดูภาพขนาดเต็ม">
+                <img 
+                  src="Financial%20%233.png" 
+                  alt="Financial Calculator - Screen 3" 
+                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300 cursor-pointer"
+                  loading="lazy"
+                >
+              </a>
             </div>
           </div>
-          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Financial Logic</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Budget Tracking</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Real-time Data</span>
+
+          <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-amber-300 font-medium">Financial Logic</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-amber-300 font-medium">Real-time Data Processing</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-amber-300 font-medium">Budget Planning</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-amber-300 font-medium">Savings Projection</span>
           </div>
         </div>
 
-        <!-- Project 4: Secure Authentication & Account Recovery -->
-        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Secure Authentication System
-              </h3>
-            </div>
-            <div class="text-xs text-slate-400 space-y-2 mb-4 leading-relaxed">
-              <p><strong class="text-slate-200">Features:</strong> ออกแบบและพัฒนาระบบยืนยันตัวตนผู้ใช้ที่ปลอดภัย มีฟีเจอร์ Login, การกู้คืนรหัสผ่านด้วยระบบยืนยันรหัส OTP และการจัดการ Session Management</p>
-              <p><strong class="text-slate-200">Highlights:</strong> ให้ความสำคัญกับ Data Security ควบคู่กับ UX/UI Flow ที่ใช้งานง่าย ป้องกันการเข้าถึงข้อมูลโดยไม่ได้รับอนุญาตได้อย่างรัดกุม</p>
-            </div>
-          </div>
-          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Authentication</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">OTP Verification</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Security</span>
-          </div>
+      </div>
+
+      <!-- PART 2: OTHER PROJECTS & SYSTEMS (ผลงานพัฒนาอื่นๆ) -->
+      <div class="mt-16">
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-white flex items-center gap-2">
+            <i data-lucide="cpu" class="text-indigo-400"></i> โครงงานและระบบอื่นๆ (Other Projects & Systems)
+          </h3>
+          <p class="text-slate-400 text-xs mt-1">ผลงานด้าน AI, ระบบยืนยันตัวตน และแช็ตบอตอัตโนมัติ</p>
         </div>
 
-        <!-- Project 5: E-Commerce Platform with Automated Email Notifications -->
-        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                <i data-lucide="shopping-cart" class="w-4 h-4 text-cyan-400"></i> E-Commerce with Automated Notifications
-              </h3>
-            </div>
-            <div class="text-xs text-slate-400 space-y-2 mb-4 leading-relaxed">
-              <p><strong class="text-slate-200">Features:</strong> พัฒนาระบบร้านค้าออนไลน์ครบวงจร (End-to-End E-Commerce) พร้อมระบบแจ้งเตือนผ่านอีเมลอัตโนมัติเพื่อยืนยันรายการสั่งซื้อ ติดตามสถานะพัสดุ และส่งใบเสร็จรับเงินแบบเรียลไทม์</p>
-              <p><strong class="text-slate-200">Highlights:</strong> ปรับปรุง Checkout Workflow และลดขั้นตอนการตรวจสอบแบบ Manual ช่วยเพิ่มความรวดเร็วในการประมวลผลคำสั่งซื้อและยกระดับความพึงพอใจของลูกค้า</p>
-            </div>
-          </div>
-          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">E-Commerce Flow</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Email Automation</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Transaction Tracking</span>
-          </div>
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-        <!-- Project 6: AI-Powered LINE OA Chatbot -->
-        <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
-          <div>
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                <i data-lucide="bot" class="w-4 h-4 text-sky-400"></i> AI-Powered LINE OA Chatbot
-              </h3>
+          <!-- Project 4: AI-Powered Estimation & Analysis -->
+          <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="text-base font-bold text-white flex items-center gap-2">
+                  <i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i> AI Estimation & Analysis
+                </h4>
+              </div>
+              <div class="text-xs text-slate-400 space-y-2 mb-4 leading-relaxed">
+                <p><strong class="text-slate-200">Features:</strong> เชื่อมต่ออินพุต Natural Language Processing (NLP) เพื่อแยกวิเคราะห์ (Parse) และประมวลผลข้อมูลการกินและค่าใช้จ่ายอัตโนมัติ</p>
+                <p><strong class="text-slate-200">Highlights:</strong> ลดความซ้ำซ้อนด้วยการป้อน Text Prompts ให้ระบบจัดหมวดหมู่และวิเคราะห์ผลลัพธ์ทันที</p>
+              </div>
             </div>
-            <div class="text-xs text-slate-400 space-y-2 mb-4 leading-relaxed">
-              <p><strong class="text-slate-200">Features:</strong> พัฒนาและเชื่อมต่อ AI Chatbot บนแพลตฟอร์ม LINE Official Account (LINE OA) เพื่อตอบคำถามอัตโนมัติและสื่อสารกับผู้ใช้แบบเรียลไทม์</p>
-              <p><strong class="text-slate-200">Highlights:</strong> ประยุกต์ใช้ NLP เพื่อจับความต้องการและตอบคำถามได้อย่างแม่นยำ ช่วยลดระยะเวลาการทำงานแบบ Manual และเพิ่มประสิทธิภาพการบริการลูกค้า</p>
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800/80">
+              <span class="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">NLP Integration</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Text Parsing</span>
             </div>
           </div>
-          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">LINE Messaging API</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">AI & NLP</span>
-            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-indigo-300 font-medium">Chatbot Workflow</span>
-          </div>
-        </div>
 
+          <!-- Project 5: Secure Authentication & Account Recovery -->
+          <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="text-base font-bold text-white flex items-center gap-2">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Secure Authentication
+                </h4>
+              </div>
+              <div class="text-xs text-slate-400 space-y-2 mb-4 leading-relaxed">
+                <p><strong class="text-slate-200">Features:</strong> ออกแบบและพัฒนาระบบยืนยันตัวตน มีระบบเข้าสู่ระบบ, การกู้คืนรหัสผ่านด้วยรหัส OTP และการจัดการ Session</p>
+                <p><strong class="text-slate-200">Highlights:</strong> ป้องกันการเข้าถึงข้อมูลโดยไม่ได้รับอนุญาต ควบคู่ไปกับ User Experience ที่ราบรื่น</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800/80">
+              <span class="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-emerald-300 font-medium">OTP Verification</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-emerald-300 font-medium">Security</span>
+            </div>
+          </div>
+
+          <!-- Project 6: AI-Powered LINE OA Chatbot -->
+          <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="text-base font-bold text-white flex items-center gap-2">
+                  <i data-lucide="bot" class="w-4 h-4 text-sky-400"></i> LINE OA Chatbot
+                </h4>
+              </div>
+              <div class="text-xs text-slate-400 space-y-2 mb-4 leading-relaxed">
+                <p><strong class="text-slate-200">Features:</strong> พัฒนาและเชื่อมต่อแช็ตบอต AI บน LINE Official Account เพื่อตอบคำถามอัตโนมัติและสื่อสารแบบเรียลไทม์</p>
+                <p><strong class="text-slate-200">Highlights:</strong> ประยุกต์ใช้ NLP เพื่อตอบคำถามอย่างแม่นยำ ช่วยลดภาระงาน Manual และเพิ่มประสิทธิภาพบริการ</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-800/80">
+              <span class="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-medium">LINE API</span>
+              <span class="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-medium">AI & NLP</span>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
